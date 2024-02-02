@@ -1,6 +1,3 @@
-Certainly, here is a concise description for your Azure Blob Storage Uploader Bash script:
-
----
 
 **Azure Blob Storage Uploader Script**
 
