@@ -1,16 +1,21 @@
 #!/bin/bash
 
-# Azure Storage Account Information
-account_name="demo202425"
-account_key="Cs64A6v1C+EBBgFOs+FyyknjjvfSY+KiDDR+8z3aC3gBk8J11fyUjnMUbVeM0/GvnEgCmGG7o7ky+AStnHOnvA=="
-container_name="demo"
+# Default Azure Storage Account Information
+default_account_name="your_default_account_name"
+default_account_key="your_default_account_key"
+default_container_name="your_default_container_name"
 
 # File to Upload
 file_path="$1"
 
+# Set default values if not provided
+account_name="${2:-$default_account_name}"
+account_key="${3:-$default_account_key}"
+container_name="${4:-$default_container_name}"
+
 # Check if file_path is provided
 if [ -z "$file_path" ]; then
-  echo "Usage: $0 <file_path>"
+  echo "Usage: $0 <file_path> [account_name] [account_key] [container_name]"
   exit 1
 fi
 
