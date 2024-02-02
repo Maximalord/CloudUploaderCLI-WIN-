@@ -9,11 +9,12 @@ This Bash script provides a straightforward way to upload files to Azure Blob St
 **Usage:**
 
 ```bash
-./clouduploader.sh 'E:\lalala.txt'
+./clouduploader.sh 'filepath.txt'
 ```
 
 **Prerequisites:**
 - Azure CLI installed on the system.
+- WSL with ubuntu installed on the system
 - Proper configuration of Azure Storage Account information within the script.
 
 **Script Highlights:**
